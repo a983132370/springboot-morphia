@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="springQrcode">
+<head>
+  <meta charset="utf-8" />
+  <title>二维码验证</title>
+  <link href="lib/flat-ui/dist/css/vendor/bootstrap.min.css" rel="stylesheet" />
+  <link href="lib/flat-ui/dist/css/flat-ui.css" rel="stylesheet" />
+  <link href="css/chat.css" rel="stylesheet" />
+  <!--引入jQuery-->
+  <script src="js/jquery.js"></script>
+</head>
+<body>
+      <div align="center"  style="margin-top: 10%;">
+                请扫描二维码下载<br/>
+          <img src="/loginQrcode" />
+      </div>
+<!-- /.container -->
+<script>
+      function validate(){
+        $.ajax({
+          type:"post",
+          url : "/validQrcodeLogin",
+          success:function(result){
+            eval(result);
+            if(result){
+               window.location.href = "/toDownFilePage";
+            }else{
+              setTimeout("validate()",1000);
+            }
+          }
+        })
+      }
+      setTimeout("validate()",5000);
+</script>
+
+
+</body>
+</html>
