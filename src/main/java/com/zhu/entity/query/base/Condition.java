@@ -5,7 +5,7 @@ import com.zhu.entity.query.base.Paged;
 import java.util.List;
 
 /**
- * Created by lansheng on 15/9/2.
+ * base的查询条件
  */
 public class Condition {
     //是否使用降序, 默认升序

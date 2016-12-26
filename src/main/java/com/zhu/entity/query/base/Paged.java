@@ -1,7 +1,6 @@
 package com.zhu.entity.query.base;
 
 /**
- * Created by lansheng on 15/8/28.
  * 分页
  */
 public class Paged {

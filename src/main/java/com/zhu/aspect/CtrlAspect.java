@@ -20,11 +20,12 @@ import java.util.Map;
 
 /**
  * Created by zhu on 2016/11/4.
+ * 切面配置
  */
 @Aspect
 @Configuration
 public class CtrlAspect {
-
+    //日志log对象
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     private String requestPath = null ; // 请求地址
@@ -86,6 +87,7 @@ public class CtrlAspect {
     public String getUserIpAddr(HttpServletRequest request) {
 
         String ip = request.getHeader("x-forwarded-for");
+        //以下为了判断代理情况 获取相对真实的ip
         if(ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
             ip = request.getHeader("Proxy-Client-IP");
         }

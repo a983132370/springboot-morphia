@@ -19,6 +19,7 @@ import java.util.List;
 
 /**
  * Created by zhu on 2016/12/21.
+ * 这是mongo 的配置类
  */
 @Configuration
 @EnableConfigurationProperties(MongoProp.class)

@@ -6,12 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Description:分页对象类
- * @Copyright Copyright 2014-2015 foresealife Tech. Co. Ltd. All Rights
- *            Reserved.<BR>
- * @author： liuwei <BR>
- * @Time： 2015年1月27日 <BR>
- * @version 1.0.0 <BR>
+ * 分页对象类
  */
 public class PageInfo<E> {
 	

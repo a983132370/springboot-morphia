@@ -3,7 +3,7 @@ package com.zhu.entity.baseconfig;
 import org.mongodb.morphia.annotations.Id;
 
 /**
- * Created by zhu
+ * Created by zhu 底层对象 主要设置一些通用属性 继承此类 便于DAO的泛型使用
  */
 public abstract class Document {
 	@Id

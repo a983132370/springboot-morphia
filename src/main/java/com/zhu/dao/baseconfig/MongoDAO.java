@@ -18,8 +18,6 @@ import org.springframework.cache.annotation.Cacheable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-
 /**
  * Created by zhu
  */
@@ -106,8 +104,6 @@ public abstract class MongoDAO<T,K,C extends Condition> extends BasicDAO<T, K> {
 				.field("id").equal(new ObjectId(id));
 		return findOne(queryById);
 	}
-
-
 	/**
 	 * 批量添加
 	 * @param ts

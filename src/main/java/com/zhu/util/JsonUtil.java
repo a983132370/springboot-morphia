@@ -12,6 +12,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * 该类提供 object > json   及 json < object  的转换
+ */
 public abstract class JsonUtil {
 
 	protected static TheadLocalDateFormat dateFormat = new TheadLocalDateFormat();

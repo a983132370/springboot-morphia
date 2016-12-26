@@ -16,7 +16,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * Created by zhu on 2016/7/24.
+ * Created by zhu on 2016/11/24.
  */
 @Repository
 public class AppUserDao extends MongoDAO<User, String, UserCondition> {
