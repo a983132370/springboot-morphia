@@ -7,9 +7,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * 主要提供日期格式的转换
- */
 public abstract class DateUtil {
 
 	public static final String PATTERN_YEAR2MONTH = "yyyyMM";
@@ -105,7 +102,7 @@ public abstract class DateUtil {
 
 	/**
 	 * 获取当前时间
-	 * 
+	 *
 	 * @return
 	 */
 	public static Date now() {
