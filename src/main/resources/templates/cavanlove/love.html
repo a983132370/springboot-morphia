@@ -71,7 +71,7 @@
 
         // Get text from hash
 
-        var string = "张艺";
+        var string = "a surprise";
         var hash = document.location.hash.substr(1);
 
         if (hash.length !== 0) {
@@ -79,7 +79,6 @@
             string = hash;
 
         }
-        alert(string)
         var text3d = new THREE.TextGeometry(string, {
             size: 80,
             height: 20,

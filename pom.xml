@@ -16,6 +16,27 @@
 
     <dependencies>
         <!--本地jar start-->
+        <!--servlet依赖 start-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!--servlet依赖 end-->
+        <!-- JSP标准标签库  start-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <!-- JSP标准标签库  end-->
+        <!--jsp依赖 start-->
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--jsp依赖 end-->
         <!--thymeleaf  模板引擎-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
